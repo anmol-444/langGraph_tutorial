@@ -16,13 +16,13 @@ llm = HuggingFaceEndpoint(
 model = ChatHuggingFace(llm = llm)
 
 class ChatState(TypedDict):
-    message: Annotated[list[BaseMessage], add_messages]
+    messages: Annotated[list[BaseMessage], add_messages]
 
 def chat_node(state: ChatState):
-    message = state["message"]
-    response = model.invoke(message)
+    messages = state["messages"]
+    response = model.invoke(messages)
 
-    return {"message": response}
+    return {"messages": [response]}
 
 checkpointer = InMemorySaver()
 
