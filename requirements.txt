@@ -4,3 +4,7 @@ python-dotenv
 langchain-huggingface
 streamlit
 langgraph-checkpoint-sqlite
+langchain-community
+duckduckgo-search
+fastmcp
+langchain-mcp-adapters
