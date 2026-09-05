@@ -8,3 +8,6 @@ langchain-community
 duckduckgo-search
 fastmcp
 langchain-mcp-adapters
+pypdf
+sentence-transformers
+faiss-cpu
