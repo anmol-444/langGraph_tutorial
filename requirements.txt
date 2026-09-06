@@ -11,3 +11,4 @@ langchain-mcp-adapters
 pypdf
 sentence-transformers
 faiss-cpu
+interrupt
